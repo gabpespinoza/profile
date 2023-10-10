@@ -1,0 +1,267 @@
+/* Estilos generales */
+body {
+    font-family: 'Kurale', 'Raleway', Arial, sans-serif;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, #4f4e4e, #ffffff);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1px 5px;
+}
+
+.logo img {
+    margin-left: 55%;
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 1em;
+    left: 0;
+    width: 100%;
+    padding: 0.5em 0;
+    background-color: var(--fondo-nav-color);
+    z-index: 1;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20%;
+}
+
+nav a {
+    padding: 1em 0.5em;
+    border-radius: 100px;
+    color: var(--texto-color);
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #b99595;
+}
+
+
+/* Imagen de Perfil*/
+.imagen-perfil {
+    margin-top: 50px;
+    width: 500px;
+    height: 650px;
+}
+
+.imagen-perfil {
+    display: flex;
+    margin-left: 100px;
+    border-top-left-radius: 98px;
+    border-top-right-radius: 98px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+    margin-bottom: 0;
+
+}
+
+.introduccion {
+    position: absolute;
+    margin-left: 50vw;
+    top: 50%;
+    text-align: right;
+    color: #fff;
+}
+
+.introduccion h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.introduccion p {
+    font-size: 18px;
+}
+
+.small {
+    width: 600px;
+    height: 500;
+    margin-left: 20px;
+    text-align: right;
+    flex-direction: column;
+    justify-content: right;
+}
+
+#sobre-mi {
+    margin-top: 5%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2%;
+}
+
+.clase-2 {
+    width: 600px;
+    height: 500;
+    text-align: center;
+    justify-content: center;
+    margin-left: 30%;
+}
+
+button {
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 1em;
+    font-family: 'Kurale', 'Raleway', Arial, sans-serif;
+    ;
+}
+
+/*Formulario*/
+#contactame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.contactame h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contactame form {
+    width: 300px;
+}
+
+.contactame label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contactame input,
+.contactame textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.contactame input[type="submit"] {
+    background-color: #4f4e4e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.contactame input[type="submit"]:hover {
+    background-color: #333;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .logo img {
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        padding: 0.5em;
+        margin: 0.5em 0;
+    }
+
+    .imagen-perfil {
+        margin-top: 50px;
+        width: 500px;
+        height: 650px;
+    }
+
+    .imagen-perfil {
+        display: flex;
+        margin-left: 100px;
+        border-top-left-radius: 98px;
+        border-top-right-radius: 98px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .introduccion {
+        position: absolute;
+        margin-left: 50vw;
+        top: -10%;
+        text-align: right;
+        color: #fff;
+    }
+
+    .introduccion h1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .introduccion p {
+        font-size: 18px;
+    }
+
+    .small {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #sobre-mi {
+        margin-top: 10%;
+        padding: 5%;
+    }
+
+    .clase-2 {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi sitio web</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="style-cards.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Raleway:wght@400;500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo"></a>
+            <img src="recursos/logo.png" alt="Logo" a href="#home">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+            </ul>
+
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/patriciagdelgadillo" target=" _blank"><img src="recursos/facebook.png"
+                        width="40" height="40"></a>
+                <a href="https://www.instagram.com/pattybohemia/?hl=en" target="_blank"><img
+                        src="recursos/instagram.png" width="40" height="40"></a>
+                <a href="https://www.linkedin.com/in/patricia-espinoza-0b1a32160?originalSubdomain=bo"
+                    target="_blank"><img src="recursos/linkedin.png" width="40" height="40"></a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="imagen-perfil">
+            <img src="recursos/imagen-perfil.jpg" alt="Patricia Delgadillo Espinoza">
+        </div>
+
+        <div class="introduccion">
+            <p>Hola, Soy Patricia</p>
+            <h1>Soy comunicadora Social.</h1>
+            <div class="small">
+                <p>Apasionada por el aprendizaje continuo</p>
+                <p>Recientemente, me embarqué en un emocionante curso de 100 horas donde aprendí los fundamentos de
+                    HTML,
+                    CSS y JavaScript. Durante este proceso, pude desarrollar proyectos prácticos que me permitieron
+                    aplicar
+                    mis conocimientos recién adquiridos. Ahora, en mi sitio web, quiero compartir contigo algunos de
+                    esos
+                    proyectos, que van desde diseños web atractivos y funcionales hasta implementaciones interactivas
+                    con
+                    JavaScript. ¡Te invito a explorar mi trabajo y a seguir descubriendo conmigo las infinitas
+                    posibilidades
+                    de la programación en el mundo del front-end!</p>
+                <a href="#contactame"><button class="boton-intro">Contáctame</button></a>
+            </div>
+        </div>
+
+    </section>
+    <section id="sobre-mi">
+        <div class="clase-2">
+            <h2>Sobre mí</h2>
+            <p>Apasionada por el aprendizaje contínuo</p>
+            <p>Además de mi pasión por la tecnología, disfruto de la lectura de literatura de ciencia ficción, estar
+                al tanto de las últimas actualizaciones en inteligencia artificial, coleccionar películas icónicas y
+                explorar lugares nuevos. También me encanta conocer personas de diferentes culturas, practicar
+                idiomas como el inglés y el portugués, y sumergirme en experiencias enriquecedoras. Estoy
+                entusiasmada por seguir creciendo profesionalmente y contribuir con mis habilidades en un entorno
+                dinámico y desafiante</p>
+        </div>
+    </section>
+
+
+    <section id="proyectos" class="proyectos">
+        <div class="cards-container">
+            <!-- Tarjeta 1 -->
+            <div class="card">
+                <div class="header">
+                    <h3>Proyecto 1</h3>
+                    <p>Criptomonedas en Bolivia</p>
+                </div>
+                <div class="footer">
+                    <p> Mis primeros pasos en código </p>
+                    <a href="https://github.com/lab-tecnosocial/articulo-criptomonedas.git" target="_blank">
+                        <img src="recursos/cards/criptomonedas.png" alt="" width="100px" height="100px" />
+
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="card">
+                <div class="header">
+                    <h3>Proyecto 2</h3>
+                    <p>Piedra, papel y tijera</p>
+                </div>
+                <div class="footer">
+                    <p> Practicando JavaScript </p>
+                    <a href="https://github.com/gabpespinoza/Rock-paper-scissors-game.git" target="_blank">
+                        <img src="recursos/cards/piedra-papel-tijera.png" alt="" width="100px" height="100px" />
+                    </a>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="card">
+                <div class="header">
+                    <h3>Proyecto 3</h3>
+                    <p>Práctica con mapas</p>
+                </div>
+                <div class="footer">
+                    <p> Ubicando lugaresy añadiendo descripciones. </p>
+                    <a href="https://github.com/gabpespinoza/Mapa.git" target="_blank">
+                        <img src="recursos/cards/mapa.png" alt="mapa de cochabamba" width="90px" height="90px" />
+                    </a>
+                </div>
+            </div>
+            <!-- Tarjeta 4 -->
+            <div class="card">
+                <div class="header">
+                    <h3>Proyecto 4</h3>
+                    <p>Práctica de varios elementos</p>
+                </div>
+                <div class="footer">
+                    <p> Proximamente... </p>
+                    <a href="#">
+                        <img src="recursos/cards/practica2.png" alt="" width="90px" height="90px" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contactame">
+
+        <h3>Formulario de Contacto</h3>
+
+        <form action="https://formsubmit.co/pgdelgadillo@gmail.com" target="_blank" method="POST">
+            <label for="name"> Ingresa tu nombre</label>
+            <input type="text" name="name" required>
+
+            <label for="email">Su Correo:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Deje su Mensaje:</label>
+            <textarea id="message"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Patricia - Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
