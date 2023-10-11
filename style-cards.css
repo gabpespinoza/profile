@@ -50,5 +50,6 @@
         display: flex;
         justify-content: center;
         margin-inline: auto;
+        font-size: 2em;
     }
 }
