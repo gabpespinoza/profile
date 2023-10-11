@@ -1,10 +1,12 @@
 /* Estilos generales */
 body {
+    background-image: linear-gradient(to bottom, #4f4e4e, #ffffff);
     font-family: 'Kurale', 'Raleway', Arial, sans-serif;
     letter-spacing: 0.5px;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to bottom, #4f4e4e, #ffffff);
+    overflow-x: hidden;
+
 }
 
 /* Header */
@@ -83,14 +85,14 @@ nav a:hover {
 
 .introduccion {
     position: absolute;
-    margin-left: 50vw;
+    margin-left: 46vw;
     top: 50%;
     text-align: right;
     color: #fff;
 }
 
 .introduccion h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     margin: 0;
 }
@@ -114,6 +116,13 @@ nav a:hover {
     color: #fff;
     text-align: center;
     padding: 2%;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .clase-2 {

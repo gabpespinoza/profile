@@ -1,8 +1,8 @@
 .cards-container {
     display: flex;
-    width: 130%;
+    width: 100%;
     padding: 60px;
-    margin-left: 10%;
+    margin-left: -1%;
 }
 
 .cards-container .card {
