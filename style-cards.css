@@ -37,3 +37,11 @@
     margin-right: 80px;
     transform: rotate(4deg) translateY(-15px);
 }
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+
+    .cards-container {
+        flex-direction: column;
+    }
+}
