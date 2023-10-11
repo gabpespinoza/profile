@@ -4,8 +4,7 @@ body {
     font-family: 'Kurale', 'Raleway', Arial, sans-serif;
     letter-spacing: 0.5px;
     margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    padding: 1x;
 
 }
 
@@ -13,15 +12,14 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 7px;
     align-items: center;
     background-color: #333;
     color: #fff;
-    padding: 1px 5px;
 }
 
 .logo img {
-    margin-left: 55%;
+    margin-left: 35%;
     width: 65px;
     height: 65px;
     border-radius: 50px;
@@ -48,7 +46,7 @@ nav {
 
 .socialmedia {
     display: flex;
-    justify-content: flex-start;
+    justify-content: right;
     margin-left: 20%;
 }
 
@@ -71,15 +69,15 @@ nav a:hover {
 /* Imagen de Perfil*/
 .imagen-perfil {
     margin-top: 50px;
-    width: 500px;
-    height: 650px;
+    width: 400px;
+    height: 600px;
 }
 
 .imagen-perfil {
     display: flex;
-    margin-left: 100px;
-    border-top-left-radius: 98px;
-    border-top-right-radius: 98px;
+    margin-left: 20%;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     overflow: hidden;
@@ -106,7 +104,7 @@ nav a:hover {
 }
 
 .small {
-    width: 600px;
+    width: 500px;
     height: 500;
     margin-left: 20px;
     text-align: right;
@@ -130,7 +128,7 @@ nav a:hover {
 }
 
 .clase-2 {
-    width: 600px;
+    width: 700px;
     height: 500;
     text-align: center;
     justify-content: center;
@@ -201,30 +199,31 @@ footer {
 
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
+
     .logo img {
-        margin-left: 5%;
-        width: 50px;
-        height: 50px;
+        margin-left: 40%;
+        width: 47px;
+        height: 47px;
     }
 
     .socialmedia {
         flex-direction: right;
-        margin-left: -10%;
+        margin-left: 10%;
     }
 
     nav {
-        flex-direction: row;
         width: -auto;
+        font-size: 0.44rem;
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
     }
 
     nav a {
         padding: 0.2em;
-        margin: 0.2em 0;
+        margin: 0.2em;
     }
 
     #home {
@@ -252,9 +251,10 @@ footer {
     }
 
     .introduccion {
-        text-align: right;
-        color: #fff;
         text-align: center;
+        font-size: 2em;
+        color: #fff;
+        padding: 10%;
     }
 
     .introduccion h1 {
@@ -267,6 +267,10 @@ footer {
         font-size: 9px;
     }
 
+    button {
+        font-size: 0.5em;
+    }
+
     .small {
         width: 100%;
         margin-left: 0;
@@ -276,7 +280,7 @@ footer {
 
     #sobre-mi {
         margin-top: 10%;
-        padding: 5%;
+        padding: 10%;
     }
 
     .clase-2 {
@@ -284,5 +288,13 @@ footer {
         margin-left: 0;
         text-align: center;
         justify-content: center;
+    }
+
+    #contactame {
+        margin-left: 10%;
+    }
+
+    .footer {
+        font-size: 0.5em;
     }
 }
