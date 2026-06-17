@@ -1,164 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Mi sitio web</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="style-cards.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Raleway:wght@400;500&display=swap"
-        rel="stylesheet">
-    <meta name="title" content="Patricia Delgadillo Espinoza - Comunicadora Social">
-    <meta name="description"
-        content="Apasionada por el aprendizaje continuo. Descubre algunos de mis primeros proyectos en programación con Html, Css y Javascript.">
-    <meta name="keywords" content="patricia delgadillo espinoza, programadora mujer, mujeres y programacion">
-    <meta name="author" content="Patricia Delgadillo Espinoza">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patricia Delgadillo | Technical Product Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Style.css">
 </head>
-
 <body>
-    <header>
-        <div class="logo"></a>
-            <img src="recursos/logo.png" alt="Logo" a href="#home">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-            </ul>
 
-            <div class="socialmedia">
-                <a href="https://www.facebook.com/patriciagdelgadillo" target=" _blank"><img src="recursos/facebook.png"
-                        width="40" height="40"></a>
-                <a href="https://www.instagram.com/pattybohemia/?hl=en" target="_blank"><img
-                        src="recursos/instagram.png" width="40" height="40"></a>
-                <a href="https://www.linkedin.com/in/patricia-espinoza-0b1a32160?originalSubdomain=bo"
-                    target="_blank"><img src="recursos/linkedin.png" width="40" height="40"></a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">PD.</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">PM Competencies</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#products">Product Portfolio</a></li>
+            <li><a href="#contact" class="btn-nav">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section (Layout inspired by image_6c549a.png) -->
+    <header class="hero section">
+        <div class="hero-container">
+            <!-- Left Side: Profile Picture with Pastel Lilac Blob Shape -->
+            <div class="hero-image-wrapper scroll-reveal">
+                <div class="blob-bg"></div>
+                <img src="/profile/recursos/myprofilePG.jpeg" alt="Patricia Delgadillo" class="profile-img">
             </div>
-        </nav>
+            
+            <!-- Right Side: Impact-Driven Value Proposition -->
+            <div class="hero-text-wrapper scroll-reveal">
+                <span class="badge scroll-reveal">Technical Product Manager & Social Media Designer</span>
+                <h1 class="scroll-reveal delay-2">Building Digital Products & Brands with Social Purpose</h1>
+                <p class="hero-description">
+                    I lead cross-functional squads to scope, build, and launch human-centered products. Combining data storytelling with frontend literacy, I transform complex social and environmental challenges into scalable digital solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn-primary">View Product Portfolio</a>
+                    <a href="Curriculum 2026- docencia.pdf" target="_blank" class="btn-secondary">Download CV</a>
+                </div>
+
+                <!-- Styled Highlight Card inspired by image_6c549a.png -->
+                <div class="highlight-quote">
+                    <p>"Fusing Scrum framework execution with technical engineering fluencies to deliver products that generate real, measurable social impact."</p>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <section id="home">
-        <div class="intro-container">
-            <div class="imagen-perfil">
-                <img src="recursos/imagen-perfil.jpg" alt="Patricia Delgadillo Espinoza">
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
+        <div class="container grid-2 scroll-reveal">
+            <div>
+                <h2>Product Leadership DNA</h2>
+                <p class="text-block">
+                    With over 9 years of cross-functional experience bridging strategic communication and technology, I manage digital products from ideation to launch[cite: 4]. Fully bilingual (English C1 / Portuguese Intermediate), I guide agile teams using data-backed discovery models and user-centric experience mapping[cite: 4].
+                </p>
             </div>
-            <div class="introduccion">
-                <p>Hola, Soy Patricia</p>
-                <h1>Soy comunicadora Social.</h1>
-                <div class="small">
-                    <p>Apasionada por el aprendizaje continuo</p>
-                    <p>Recientemente, me embarqué en un emocionante curso de 100 horas donde aprendí los fundamentos
-                        de HTML,
-                        CSS y JavaScript. Durante este proceso, pude desarrollar proyectos prácticos que me
-                        permitieron
-                        aplicar
-                        mis conocimientos recién adquiridos. Este sitio es uno de esos proyectos.
-                        ¡Te invito a explorar mi trabajo!</p>
-                    <a href="#contactame"><button class="boton-intro">Contáctame</button></a>
-                </div>
+            <div class="stats-grid">
+                <div class="stat-card"><h3>5+</h3><p>Shipped Products</p></div>
+                <div class="stat-card"><h3>Agile</h3><p>Scrum Methodologies</p></div>
+                <div class="stat-card"><h3>Google</h3><p>PM Certified (In Progress)</p></div>
             </div>
         </div>
     </section>
 
-    <section id="sobre-mi">
-        <div class="clase-2" class="parallax">
-            <h2>Sobre mí</h2>
-            <p>Apasionada por el aprendizaje contínuo</p>
-            <p>Además de mi pasión por la tecnología, disfruto de la lectura de literatura de ciencia
-                ficción,estaral tanto de las últimas actualizaciones en inteligencia artificial, coleccionar películas
-                icónicas yexplorar lugares nuevos. También me encanta conocer personas de diferentes culturas,
-                practicaridiomas como el inglés y el portugués, y sumergirme en experiencias enriquecedoras.</p>
-        </div>
-        </div>
-    </section>
-
-
-    <section id="proyectos" class="proyectos">
-        <div class="cards-container">
-            <!-- Tarjeta 1 -->
-            <div class="card">
-                <div class="header">
-                    <h3>Proyecto 1</h3>
-                    <p>Criptomonedas en Bolivia</p>
-                </div>
-                <div class="footer">
-                    <p> Mis primeros pasos en código </p>
-                    <a href="https://github.com/lab-tecnosocial/articulo-criptomonedas.git" target="_blank">
-                        <img src="recursos/cards/criptomonedas.png" alt="" width="100px" height="100px" />
-
-                </div>
+    <!-- PM Competencies Section (Showcasing Basic Programming as a PM Superpower) -->
+    <section id="skills" class="section">
+    <div class="container scroll-reveal">
+        <h2 class="text-center">Core PM Competencies</h2>
+        <p class="subtitle text-center">Seamlessly navigating product discovery, metrics analytics, and technical architecture pipelines.</p>
+        
+        <div class="tech-grid">
+            <div class="tech-card scroll-reveal delay-3">
+                <div class="tech-icon">📐</div>
+                <h3>Product Strategy & Agile</h3>
+                <p>Scrum framework execution, backlog grooming, MVP definition, and roadmap management utilizing Google Project Management frameworks[cite: 4].</p>
             </div>
-            <!-- Tarjeta 2 -->
-            <div class="card element1">
-                <div class="header">
-                    <h3>Proyecto 2</h3>
-                    <p>Piedra, papel y tijera</p>
-                </div>
-                <div class="footer">
-                    <p> Practicando JavaScript </p>
-                    <a href="https://github.com/gabpespinoza/Rock-paper-scissors-game.git" target="_blank">
-                        <img src="recursos/cards/piedra-papel-tijera.png" alt="" width="100px" height="100px" />
-                    </a>
-                </div>
+            <div class="tech-card scroll-reveal delay-4">
+                <div class="tech-icon">💻</div>
+                <h3>Technical Fluency</h3>
+                <p>Directly communicating with engineering teams via frontend knowledge (HTML, CSS, JavaScript, React, Astro, TypeScript) to optimize sprints and minimize tech debt[cite: 2, 4].</p>
             </div>
-            <!-- Tarjeta 3 -->
-            <div class="card element2">
-                <div class="header">
-                    <h3>Proyecto 3</h3>
-                    <p>Práctica con mapas</p>
-                </div>
-                <div class="footer">
-                    <p> Ubicando lugaresy añadiendo descripciones. </p>
-                    <a href="https://github.com/gabpespinoza/Mapa.git" target="_blank">
-                        <img src="recursos/cards/mapa.png" alt="mapa de cochabamba" width="90px" height="90px" />
-                    </a>
-                </div>
+            <div class="tech-card scroll-reveal delay-5">
+                <div class="tech-icon">📊</div>
+                <h3>Data & UX Optimization</h3>
+                <p>Executing user research pipelines, workflow diagrams, SEO audits, and metrics tracking using Google Analytics, Search Console, and Flourish data models[cite: 2, 4].</p>
             </div>
-            <!-- Tarjeta 4 -->
-            <div class="card">
-                <div class="header">
-                    <h3>Proyecto 4</h3>
-                    <p>Práctica de varios elementos</p>
-                </div>
-                <div class="footer">
-                    <p> Proximamente... </p>
-                    <a href="#">
-                        <img src="recursos/cards/practica2.png" alt="" width="90px" height="90px" />
-                    </a>
-                </div>
+            <!-- NEW: Social Media Design Card -->
+            <div class="tech-card scroll-reveal delay-6">
+                <div class="tech-icon">🎨</div>
+                <h3>Social Media Design</h3>
+                <p>Creating compelling visual narratives for brands across digital platforms. Expert in brand identity, content strategy, and engagement-driven design using Photoshop, Affinity, and Figma.</p>
             </div>
         </div>
-    </section>
-    <section id="contactame">
-
-        <h3>Formulario de Contacto</h3>
-        <form action="https://formsubmit.co/pgdelgadillo@gmail.com" target="_blank" method="POST">
-            <label for="name"> Ingresa tu nombre</label>
-            <input type="text" name="name">
-
-            <label for="email">Su Correo:</label>
-            <input type="email" id="email" required>
-
-            <label for="message">Deje su Mensaje:</label>
-            <textarea id="message"></textarea>
-            <input type="submit" value="Enviar">
-        </form>
-    </section>
     </div>
+</section>
+
+    <!-- NEW: Tools & Technologies Carousel Section -->
+    <section id="tools" class="section bg-light">
+        <div class="container scroll-reveal">
+            <h2 class="text-center">Tools & Technologies</h2>
+            <p class="subtitle text-center">The creative and technical stack I use to bring products to life.</p>
+            
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- First set of tools -->
+                    <div class="carousel-item">
+                        <img src="/profile/recursos/tools/Adobe_Photoshop.png" alt="Adobe Photoshop2">
+                        <span>Photoshop</span>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.simpleicons.org/affinitydesigner/222324" alt="Affinity Designer">
+                        <span>Affinity</span>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/profile/recursos/tools/filmora.jpg" alt="Filmora">
+                        <span>Filmora</span>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/profile/recursos/tools/figmaimages.png" alt="Figma">
+                        <span>Figma</span>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5">
+                        <span>HTML</span>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/profile/recursos/tools/css.png" alt="CSS3">
+                        <span>CSS</span>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+                    
+                    <!-- Duplicate set for infinite loop effect -->
+                    <div class="carousel-item">
+                        <img src="/profile/recursos/tools/Adobe_Photoshop.png" alt="Adobe Photoshop">
+                        <span>Photoshop</span>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="/profile/recursos/tools/filmora.jpg" alt="Filmora">
+                        <span>Filmora</span>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma">
+                        <span>Figma</span>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5">
+                        <span>HTML</span>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS3">
+                        <span>CSS</span>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shipped Products Section -->
+<section id="products" class="section bg-light">
+    <div class="container scroll-reveal">
+        <h2>Shipped Digital Products</h2>
+        <p class="subtitle">Propelling civic tech initiatives inside LabTecnoSocial from initial concept blueprints to real ecosystem adoption[cite: 4].</p>
+        
+        <div class="portfolio-grid">
+            <!-- 1. Mi Huella App -->
+            <div class="project-card scroll-reveal delay-3">
+                <div class="project-img-wrapper p-1">
+                    <img src="assets/logos/mi-huella-logo.png" alt="Mi Huella App" class="project-logo">
+                </div>
+                <div class="project-content">
+                    <span class="proj-badge">Product Owner</span>
+                    <h3>Mi Huella App</h3>
+                    <p>Managed the end-to-end product delivery of a carbon and water footprint calculation mobile/web application[cite: 4]. Formulated feature roadmaps, led cross-functional teams (Environmental Engineers, Devs, Designers), and implemented interactive data storytelling components via Flourish[cite: 4].</p>
+                </div>
+            </div>
+
+            <!-- 2. Arbu App -->
+            <div class="project-card scroll-reveal delay-4">
+                <div class="project-img-wrapper p-2">
+                    <img src="assets/logos/arbu-logo.png" alt="Arbu App" class="project-logo">
+                </div>
+                <div class="project-content">
+                    <span class="proj-badge">Product Discovery & Data</span>
+                    <h3>Arbu App</h3>
+                    <p>Steered feature enhancement pipelines and data collection strategies for an automated urban reforestation application[cite: 2, 4]. Defined specifications for an AI-driven species identification component, leading to official recognition by the Chamber of Entrepreneurs[cite: 2, 4].</p>
+                </div>
+            </div>
+
+            <!-- 3. Thani App -->
+            <div class="project-card scroll-reveal delay-5">
+                <div class="project-img-wrapper p-3">
+                    <img src="assets/logos/thani-logo.png" alt="Thani App" class="project-logo">
+                </div>
+                <div class="project-content">
+                    <span class="proj-badge">UX/UI Product Design</span>
+                    <h3>Thani (Emotional Connector)</h3>
+                    <p>Spearheaded user research architectures and system flowcharts for a mental health tracking application[cite: 2]. Defined the operational logic mapping behind user emotion monitoring patterns and mapped early high-fidelity UI/UX interactions within Figma[cite: 1, 2].</p>
+                </div>
+            </div>
+
+            <!-- 4. Bicidatos App -->
+            <div class="project-card scroll-reveal delay-6">
+                <div class="project-img-wrapper p-4">
+                    <img src="assets/logos/bicidatos-logo.png" alt="Bicidatos App" class="project-logo">
+                </div>
+                <div class="project-content">
+                    <span class="proj-badge">Product Optimization</span>
+                    <h3>Bicidatos App</h3>
+                    <p>Directed deployment optimizations and user data capture initiatives for an urban mobility application[cite: 2]. Conducted architectural migration steps using TypeScript to scale up landing ecosystem infrastructure assets[cite: 2].</p>
+                </div>
+            </div>
+
+            <!-- 5. Tarpuy Platform -->
+            <div class="project-card full-card scroll-reveal delay-7">
+                <div class="project-content">
+                    <span class="proj-badge">Product Management Coordination</span>
+                    <h3>Tarpuy</h3>
+                    <p>Coordinated early-stage lifecycle planning, stakeholder alignment, and ecosystem strategy for an agricultural innovation product[cite: 4]. Secured product validation through multi-sector alliances with the Municipal Productive Development Secretariat, winning the competitive DAC innovation grant[cite: 2, 4].</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- NEW: Clients Carousel Section -->
+<section class="clients-section">
+    <div class="container scroll-reveal">
+        <h2 class="text-center">Trusted by Impact-Driven Organizations</h2>
+        <p class="subtitle text-center">Collaborating with institutions committed to social innovation and environmental sustainability.</p>
+        
+        <div class="clients-carousel">
+            <div class="clients-track">
+                <!-- Client 1 -->
+                <div class="client-item">
+                    <img src="assets/clients/client-1-logo.png" alt="Client 1" class="client-logo">
+                </div>
+                <!-- Client 2 -->
+                <div class="client-item">
+                    <img src="assets/clients/client-2-logo.png" alt="Client 2" class="client-logo">
+                </div>
+                <!-- Client 3 -->
+                <div class="client-item">
+                    <img src="assets/clients/client-3-logo.png" alt="Client 3" class="client-logo">
+                </div>
+                <!-- Client 4 -->
+                <div class="client-item">
+                    <img src="assets/clients/client-4-logo.png" alt="Client 4" class="client-logo">
+                </div>
+                <!-- Client 5 -->
+                <div class="client-item">
+                    <img src="assets/clients/client-5-logo.png" alt="Client 5" class="client-logo">
+                </div>
+                <!-- Client 6 -->
+                <div class="client-item">
+                    <img src="assets/clients/client-6-logo.png" alt="Client 6" class="client-logo">
+                </div>
+                
+                <!-- Duplicate for infinite loop -->
+                <div class="client-item">
+                    <img src="assets/clients/client-1-logo.png" alt="Client 1" class="client-logo">
+                </div>
+                <div class="client-item">
+                    <img src="assets/clients/client-2-logo.png" alt="Client 2" class="client-logo">
+                </div>
+                <div class="client-item">
+                    <img src="assets/clients/client-3-logo.png" alt="Client 3" class="client-logo">
+                </div>
+                <div class="client-item">
+                    <img src="assets/clients/client-4-logo.png" alt="Client 4" class="client-logo">
+                </div>
+                <div class="client-item">
+                    <img src="assets/clients/client-5-logo.png" alt="Client 5" class="client-logo">
+                </div>
+                <div class="client-item">
+                    <img src="assets/clients/client-6-logo.png" alt="Client 6" class="client-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container text-center scroll-reveal">
+            <h2>Let's build the next impactful product together.</h2>
+            <p class="subtitle">Looking for an agile Product Manager who speaks code, understands design, and builds for social good?</p>
+            <a href="mailto:pgdelgadillo@gmail.com" class="btn-primary">Get In Touch</a>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 Patricia - Algunos derechos reservados</p>
+        <p>&copy; 2026 Patricia Delgadillo. Built from scratch with code, metrics, and strategy.</p>
     </footer>
-</body>
-<script src="script.js"></script>
 
+    <script src="script.js"></script>
+</body>
 </html>
