@@ -286,7 +286,7 @@ body {
     font-size: 2.5rem; 
     margin-bottom: 1.2rem;
     display: inline-block;
-    transition: transform 0.4s;
+    transition: transform 0.3s;
     filter: drop-shadow(0 2px 4px rgba(159, 122, 234, 0.2));
 }
 
@@ -365,7 +365,7 @@ body {
     max-height: 80px;
     object-fit: contain;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.05));
-    transition: transform 0.4s;
+    transition: transform 0.3s;
 }
 
 .project-card:hover .project-logo {
@@ -501,6 +501,137 @@ body {
     .hero-text-wrapper h1 { font-size: 2.6rem; }
     .blob-bg, .profile-img { width: 280px; height: 280px; }
     .nav-links { display: none; }
+}
+
+
+
+/* nuevo carrusel de tool i use*/
+.tool-category{
+
+    display:none;
+    opacity:0;
+    transform:translateX(50px) scale(.95);
+
+}
+
+.tool-category.active{
+
+    display:block;
+    animation:slide .3s ease forwards;
+
+}
+
+@keyframes slide{
+
+    from{
+
+        opacity:0;
+        transform:translateX(60px) scale(.95);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0) scale(1);
+
+    }
+
+}
+.tools-slider{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:25px;
+
+}
+
+.category-container{
+
+    width:900px;
+    overflow:hidden;
+    position:relative;
+
+}
+
+.tool-category{
+
+    display:none;
+    animation:fade .3s;
+
+}
+
+.tool-category.active{
+
+    display:block;
+
+}
+
+@keyframes fade{
+
+    from{
+        opacity:0;
+        transform:translateX(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+.tools-grid{
+
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    margin-top:40px;
+
+}
+
+.tool{
+
+    width:120px;
+    text-align:center;
+    transition:.3s;
+
+}
+
+.tool img{
+
+    width:70px;
+    height:70px;
+    object-fit:contain;
+
+}
+
+.tool:hover{
+
+    transform:translateY(-8px) scale(1.08);
+
+}
+
+.tool span{
+
+    display:block;
+    margin-top:12px;
+
+}
+
+.nav{
+
+    width:50px;
+    height:50px;
+
+    border:none;
+    border-radius:50%;
+
+    font-size:22px;
+    cursor:pointer;
+
 }
 
 /* Tablet - mantiene 2 columnas hasta cierto punto */

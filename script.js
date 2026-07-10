@@ -32,3 +32,55 @@ document.addEventListener("DOMContentLoaded", () => {
         item.style.animationDelay = `${index * 0.1}s`;
     });
 });
+
+/// tool category carrusel
+const categories = document.querySelectorAll(".tool-category");
+
+let current = 0;
+let autoSlide;
+
+function showCategory(index){
+
+    categories.forEach((cat,i)=>{
+
+        cat.classList.remove("active");
+
+    });
+
+    categories[index].classList.add("active");
+
+}
+
+function nextSlide(){
+
+    current++;
+
+    if(current >= categories.length){
+        current = 0;
+    }
+
+    showCategory(current);
+
+}
+
+function startSlider(){
+
+    autoSlide = setInterval(nextSlide,3500);
+
+}
+
+function stopSlider(){
+
+    clearInterval(autoSlide);
+
+}
+
+showCategory(current);
+
+startSlider();
+
+const slider=document.querySelector(".category-container");
+
+slider.addEventListener("mouseenter",stopSlider);
+
+slider.addEventListener("mouseleave",startSlider);
